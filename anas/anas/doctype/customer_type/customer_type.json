@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:type_name",
@@ -29,7 +30,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-14 15:16:20.344741",
+ "modified": "2023-12-14 22:33:16.973082",
  "modified_by": "Administrator",
  "module": "Anas",
  "name": "Customer Type",

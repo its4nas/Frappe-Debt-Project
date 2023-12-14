@@ -36,4 +36,4 @@ class CustomersOperation(Document):
 			if total + int(self.price) > int(max_value):
 				frappe.throw("Sorry this customer have to pay thier Debt ... \n total is:" + str(total)+ "\nThe Max amount is: " + str(max_value))
 		else:
-			pass
+			self.price *= -1
