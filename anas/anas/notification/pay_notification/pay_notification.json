@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-12-14 20:55:34.329446",
+ "date_changed": "date_of_pay",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Customers Operation",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "This customer need to pay by the end of the day",
+ "modified": "2023-12-14 21:48:58.153072",
+ "modified_by": "Administrator",
+ "module": "Anas",
+ "name": "Pay Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Admin"
+  },
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Administrator"
+  },
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Pay Date for {{doc.name}}"
+}

@@ -1,0 +1,125 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer_name}-{#####}",
+ "creation": "2023-12-14 13:33:05.443138",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "operation_type",
+  "item",
+  "price",
+  "date_of_pay",
+  "time",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operation_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Operation Type",
+   "options": "\n\u0644\u0647\n\u0639\u0644\u064a\u0647",
+   "reqd": 1
+  },
+  {
+   "depends_on": "operation_type",
+   "fetch_from": "item_name.price",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customers Operation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "item"
+  },
+  {
+   "fieldname": "date_of_pay",
+   "fieldtype": "Date",
+   "label": "Date of Pay",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-14 19:45:17.822912",
+ "modified_by": "Administrator",
+ "module": "Anas",
+ "name": "Customers Operation",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

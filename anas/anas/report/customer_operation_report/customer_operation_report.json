@@ -1,0 +1,49 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-12-14 17:07:39.147921",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "start_date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "end_date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Customer Operation Header",
+ "modified": "2023-12-14 20:19:31.023266",
+ "modified_by": "Administrator",
+ "module": "Anas",
+ "name": "Customer Operation Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT customer_name as \"Customer Name\",operation_type as \"Type\",price as \"Price\", time as \"Time of Operation\" FROM `tabCustomers Operation`\r\nWHERE `tabCustomers Operation`.time BETWEEN %(start_date)s AND %(end_date)s",
+ "ref_doctype": "Customers Operation",
+ "report_name": "Customer Operation Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Admin"
+  },
+  {
+   "role": "Employee"
+  }
+ ]
+}
