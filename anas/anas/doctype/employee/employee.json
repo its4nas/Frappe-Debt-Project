@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "creation": "2023-12-14 11:10:48.077103",
@@ -47,7 +48,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-14 11:21:03.468537",
+ "modified": "2023-12-14 22:58:42.145138",
  "modified_by": "Administrator",
  "module": "Anas",
  "name": "Employee",
@@ -76,6 +77,15 @@
    "role": "Admin",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
   }
  ],
  "sort_field": "modified",
