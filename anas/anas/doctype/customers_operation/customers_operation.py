@@ -17,10 +17,8 @@ class CustomersOperation(Document):
 		total = 0
 		for d in doc:
 			if self.customer_name == d.customer_name:
-				if d.operation_type == 'عليه':
-					total = total - int(d.price)
-				else:
-					total = total + int(d.price)
+				total = total + int(d.price)
+
 		
 		type = ""
 		for c in doc1:
@@ -32,7 +30,7 @@ class CustomersOperation(Document):
 			if type == t.type_name:
 				max_value = t.max_value
 		
-		if self.operation_type == 'له':
+		if self.operation_type == 'عليه':
 			if total + int(self.price) > int(max_value):
 				frappe.throw("Sorry this customer have to pay thier Debt ... \n total is:" + str(total)+ "\nThe Max amount is: " + str(max_value))
 		else:
