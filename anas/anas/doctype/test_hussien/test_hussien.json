@@ -9,8 +9,7 @@
  "field_order": [
   "hussien_test_section",
   "name1",
-  "column_break_vqpy",
-  "image_person"
+  "column_break_vqpy"
  ],
  "fields": [
   {
@@ -26,18 +25,13 @@
    "label": "Hussien Test"
   },
   {
-   "fieldname": "image_person",
-   "fieldtype": "Attach Image",
-   "label": "Image Person"
-  },
-  {
    "fieldname": "column_break_vqpy",
    "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-15 22:11:29.614407",
+ "modified": "2024-01-15 22:18:45.113329",
  "modified_by": "Administrator",
  "module": "Anas",
  "name": "Test Hussien",
