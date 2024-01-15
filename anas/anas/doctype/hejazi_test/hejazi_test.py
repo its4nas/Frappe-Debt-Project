@@ -4,8 +4,6 @@
 # import frappe
 from frappe.model.document import Document
 
-class TestHussien(Document):
+
+class hejazitest(Document):
 	pass
-	#pass comment
-	# hijazi comment
-	#
